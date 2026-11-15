@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Temporary files
+*.log
+*.tmp

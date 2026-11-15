@@ -1,0 +1,32 @@
+{
+  "descriptions": {
+    "firstWords": {
+      "en": "Learn first words with Gramma: First Words. Look at pictures, practise spelling and build your vocabulary in English, Spanish, German and other languages.",
+      "ru": "Изучайте первые слова с Gramma: First Words. Смотрите на картинки, учитесь писать и расширяйте словарный запас на английском, испанском, немецком и других языках."
+    },
+    "wordsFromWords": {
+      "en": "Gramma: Words from Word is a word puzzle game. Make new words from the letters of a main word, find hidden words and test your vocabulary.",
+      "ru": "Грамма: Слова из Слова — словесная головоломка. Составляйте новые слова из букв главного слова, находите скрытые слова и проверяйте свой словарный запас."
+    }
+  },
+  "images": {
+    "studio": {
+      "path": "/assets/images/studio/social-preview.png",
+      "width": 1200,
+      "height": 630,
+      "alt": {"en": "Gorban Studio — GS monogram on a graphite background", "ru": "Gorban Studio — монограмма GS на графитовом фоне"}
+    },
+    "firstWords": {
+      "path": "/FeatureImage.png",
+      "width": 1024,
+      "height": 500,
+      "alt": {"en": "Gramma: First Words — illustrated word learning", "ru": "Грамма: Первые Слова — изучение слов по картинкам"}
+    },
+    "wordsFromWords": {
+      "path": "/assets/images/gramma-words-from-words/FeatureImage.png",
+      "width": 1024,
+      "height": 500,
+      "alt": {"en": "Gramma: Words from Word — golden lettering and letter tiles", "ru": "Грамма: Слова из Слова — золотые надписи и буквенные плитки"}
+    }
+  }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://grimuar.github.io/sitemap.xml

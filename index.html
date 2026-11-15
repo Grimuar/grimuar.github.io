@@ -1,171 +1,111 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gorban Studio - Gramma</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="favicon.png">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Alegreya Sans SC', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8fafc;
-            color: #2d3748;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        header {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #0056b3;
-            font-size: 3.5rem;
-            margin-bottom: 30px;
-            font-weight: 700;
-        }
-
-        .main-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            max-width: 1100px;
-            padding: 20px;
-            gap: 50px;
-        }
-
-        .feature-img {
-            max-width: 500px;
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        }
-
-        .text-block {
-            flex: 1;
-            font-size: 1.2rem;
-            line-height: 1.7;
-            font-weight: 400;
-        }
-
-        .text-block p {
-            margin-bottom: 18px;
-        }
-        
-        .text-block p:first-child {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #4682B4;
-        }
-
-        .store-section {
-            margin: 50px 0;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .store-link img {
-            height: 55px;
-            transition: transform 0.2s ease;
-        }
-
-        .store-link:hover img {
-            transform: translateY(-3px);
-        }
-
-        footer {
-            margin: 50px 0 30px;
-            text-align: center;
-        }
-
-        footer a {
-            color: #718096;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        footer p {
-            color: #a0aec0;
-            font-size: 0.8rem;
-            margin-top: 15px;
-        }
-
-        @media (max-width: 900px) {
-            .main-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            h1 { font-size: 2.5rem; }
-            .feature-img { max-width: 90%; }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Gorban Studio — Independent Games & Apps</title>
+<meta name="description" content="Independent games and apps, made with care. Explore Gramma: First Words and Gramma: Words from Word.">
+<link rel="canonical" href="https://grimuar.github.io/">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/base.css?v=1.0.3">
+<link rel="stylesheet" href="/assets/css/components.css?v=1.0.3">
+<link rel="stylesheet" href="/assets/css/pages.css?v=1.0.3">
+<script defer src="/assets/js/main.js?v=1.0.3"></script>
+<link rel="alternate" hreflang="en" href="https://grimuar.github.io/">
+<link rel="alternate" hreflang="ru" href="https://grimuar.github.io/ru/">
+<link rel="alternate" hreflang="x-default" href="https://grimuar.github.io/">
+<meta property="og:title" content="Gorban Studio — Independent Games &amp; Apps">
+<meta property="og:description" content="Independent games and apps, made with care. Explore Gramma: First Words and Gramma: Words from Word.">
+<meta property="og:url" content="https://grimuar.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://grimuar.github.io/assets/images/studio/social-preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Gorban Studio — GS monogram on a graphite background">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gorban Studio — Independent Games &amp; Apps">
+<meta name="twitter:description" content="Independent games and apps, made with care. Explore Gramma: First Words and Gramma: Words from Word.">
+<meta name="twitter:image" content="https://grimuar.github.io/assets/images/studio/social-preview.png">
+<meta name="twitter:image:alt" content="Gorban Studio — GS monogram on a graphite background">
+<script type="application/ld+json" id="site-schema">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://grimuar.github.io/#organization",
+      "name": "Gorban Studio",
+      "url": "https://grimuar.github.io/",
+      "logo": "https://grimuar.github.io/assets/images/studio/monogram.svg",
+      "description": "An independent game and app studio. Curiosity, attention to detail, and a love for our craft are at the heart of every project.",
+      "email": "egorban.studio@gmail.com"
+    }
+  ]
+}</script>
 </head>
-
-<body>
-
-    <header>
-        <h1>Gorban Studio presents Gramma: First Words</h1>
-    </header>
-
-    <main class="main-container">
-        <img src="FeatureImage.png" alt="Gramma" class="feature-img">
-
-        <div class="text-block">
-            <p>Look! Write! Remember!</p>
-            <p>Learning to Write Word by Word!</p>
-            <p>We’ll do our best to make your learning process both fun and educational!</p>
-            <p>Look at the pictures and write the words! Earn stars and unlock new categories.</p>
-            <p>Want to expand your skills? Try writing words in English, Spanish, German, and other languages.</p>
-            <p>The app is suitable for a wide audience and can be used by children with parental supervision.</p>
-        </div>
-    </main>
-
-    <section class="store-section">
-        <!-- Google Play -->
-        <a href="https://play.google.com/store/apps/details?id=com.GorbanStudio.GoogleGramma" class="store-link" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Play_2022_icon.svg" alt="Google Play">
-        </a>
-        
-        <!-- App Store -->
-        <a href="#" class="store-link" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/App_Store_iOS_11_Custom_size.png" alt="App Store">
-        </a>
-
-        <!-- RuStore -->
-        <a href="https://www.rustore.ru/catalog/app/com.OMGStudio.Gramma" class="store-link" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/RuStore_logo.svg" alt="RuStore">
-        </a>
-
-        <!-- AppGallery -->
-        <a href="https://appgallery.huawei.com/app/C117079597" class="store-link" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/HUAWEI_AppGallery.png" alt="AppGallery">
-        </a>
-    </section>
-
-    <footer>
-        <div style="display: flex; gap: 25px; justify-content: center;">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="support.html">Support</a>
-        </div>
-        <p>© 2026 Gorban Studio. All rights reserved.</p>
-    </footer>
-    
-</body>
-</html>
+<body><a class="skip" href="#main"><span data-i18n="common.skipContent">Skip to content</span></a>
+<header class="header wrap"><a class="brand" href="/" aria-label="Gorban Studio"><img src="/assets/images/studio/monogram.svg" width="40" height="40" alt=""><span><span data-i18n="common.brand">GORBAN</span> <b data-i18n="common.studio">STUDIO</b></span></a>
+<div class="navigation"><button class="menu-toggle" aria-expanded="false" aria-controls="navigation"><span data-i18n="common.menu">Menu</span> <span aria-hidden="true">☰</span></button>
+<nav id="navigation" aria-label="Main"><a class="" href="/"><span data-i18n="common.home">Home</span></a><a class="" href="/#projects"><span data-i18n="common.projects">Projects</span></a><a class="" href="/#contact"><span data-i18n="common.contact">Contact</span></a>
+</nav>
+<div class="languages" aria-label="Language"><a href="/" data-lang="en" lang="en" hreflang="en" aria-current="page">EN</a><span>/</span><a href="/ru/" data-lang="ru" lang="ru" hreflang="ru">RU</a></div>
+</div>
+</header>
+<main id="main">
+<section class="hero wrap">
+<div class="hero-copy">
+<p class="eyebrow"><span data-i18n="studio.eyebrow">A fresh perspective. Games for everyone.</span></p>
+<h1><span style="color:inherit">GORBAN</span><br><span><span>STUDIO</span><span class="gold-dot">.</span></span></h1>
+<p class="hero-slogan"><span data-i18n="studio.tagline">Creating games and heartfelt experiences.</span></p>
+<p class="hero-description"><span data-i18n="studio.description">An independent game and app studio. Curiosity, attention to detail, and a love for our craft are at the heart of every project.</span></p><a class="button" href="#projects"><span data-i18n="studio.exploreProjects">Explore projects</span> <span aria-hidden="true">↘</span></a>
+</div>
+<div class="hero-emblem" aria-hidden="true">
+<div class="orbit">
+</div><img src="/assets/images/studio/monogram.svg" width="200" height="200" alt=""><span class="emblem-caption" data-i18n="common.emblemCaption">IDEAS INTO EXPERIENCES</span>
+</div>
+<div class="hero-bottom"><span data-i18n="studio.disciplines">GAMES · APPS · EXPERIENCES</span><span data-i18n="studio.scrollExplore">SCROLL TO EXPLORE ↓</span>
+</div>
+</section>
+<section class="section wrap" id="projects">
+<div class="section-heading">
+<div>
+<p class="eyebrow">01 / <span data-i18n="studio.selectedWork">Selected work</span></p>
+<h2><span data-i18n="studio.projectsHeading">Our projects</span></h2>
+</div><p><span data-i18n="studio.projectsCaption">Small details. Lasting impressions.</span></p>
+</div>
+<div class="project-grid">
+<a class="project-card" href="/projects/gramma-first-words/" aria-labelledby="card-3408"><div class="art-link"><img class="project-art" src="/FeatureImage.png" width="1024" height="500" alt="Gramma: First Words — illustrated word learning" loading="lazy"></div>
+<div class="card-body">
+<div class="card-meta"><span>01 / GRAMMA</span><span class="status available"><span data-i18n="common.available">Available</span></span>
+</div>
+<h3 id="card-3408" data-i18n="firstWords.title">Gramma: First Words</h3><p><span data-i18n="firstWords.description">Look at the pictures. Write the words. Discover a world of learning, one word at a time.</span></p><span class="text-link"><span data-i18n="common.discoverProject">Discover the project</span> <span aria-hidden=true>↗</span></span>
+</div>
+</a>
+<a class="project-card" href="/projects/gramma-words-from-words/" aria-labelledby="card-4143"><div class="art-link"><picture class="project-picture"><source srcset="/assets/images/gramma-words-from-words/FeatureImage.webp" type="image/webp"><img class="project-art" src="/assets/images/gramma-words-from-words/FeatureImage.png" data-fallback="/assets/images/gramma-words-from-words/placeholder.svg" width="1024" height="500" alt="Gramma: Words from Word — letter tiles" loading="lazy"></picture></div>
+<div class="card-body">
+<div class="card-meta"><span>02 / GRAMMA</span><span class="status available"><span data-i18n="common.available">Available</span></span>
+</div>
+<h3 id="card-4143" data-i18n="wordsFromWords.title">Gramma: Words from Word</h3><p><span data-i18n="wordsFromWords.description">A familiar word game: make words from a single word. One word, many possibilities. Find hidden words and compete with friends.</span></p><span class="text-link"><span data-i18n="common.discoverProject">Discover the project</span> <span aria-hidden=true>↗</span></span>
+</div>
+</a>
+</div>
+</section>
+<section class="section about wrap">
+<p class="eyebrow">02 / <span data-i18n="studio.aboutLabel">The studio</span></p>
+<div>
+<h2><span data-i18n="studio.aboutHeading" data-i18n-lines>Creating games.<br>Inspiring experiences.</span></h2><p><span data-i18n="studio.aboutDescription">Gorban Studio is an independent game and app development studio. We create thoughtful digital experiences that bring more joy and discovery into everyday life.</span></p>
+</div>
+</section>
+<section class="contact section wrap" id="contact">
+<p class="eyebrow">03 / <span data-i18n="studio.contactLabel">Let’s talk</span></p>
+<h2><span data-i18n="studio.contactHeading">Get in touch</span></h2><p><span data-i18n="studio.contactDescription">A question, an idea, or just a hello. We’d love to hear from you.</span></p><a class="email" href="mailto:egorban.studio@gmail.com">egorban.studio@gmail.com <span aria-hidden="true">↗</span></a>
+</section>
+</main>
+<footer class="footer wrap">
+<div><a class="brand" href="/"><img src="/assets/images/studio/monogram.svg" width="40" height="40" alt=""><span><span data-i18n="common.brand">GORBAN</span> <b data-i18n="common.studio">STUDIO</b></span></a><p>© <span data-year>2026</span> <span data-i18n="common.studioName">Gorban Studio</span></p>
+</div>
+<div class="footer-links"><a class="" href="/projects/gramma-first-words/" data-i18n="firstWords.title">Gramma: First Words</a><a class="" href="/projects/gramma-words-from-words/" data-i18n="wordsFromWords.title">Gramma: Words from Word</a><a class="" href="mailto:egorban.studio@gmail.com" data-contact-email>egorban.studio@gmail.com</a>
+</div>
+</footer>
+</body></html>
